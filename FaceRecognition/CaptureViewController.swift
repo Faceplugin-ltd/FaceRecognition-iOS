@@ -34,7 +34,6 @@ class CaptureViewController: UIViewController, AVCaptureVideoDataOutputSampleBuf
     @IBOutlet weak var captureView: UIView!
     @IBOutlet weak var warningLbl: UILabel!
     
-    
     @IBOutlet weak var livenessLbl: UILabel!
     @IBOutlet weak var qualityLbl: UILabel!
     @IBOutlet weak var luminanceLbl: UILabel!
@@ -83,6 +82,9 @@ class CaptureViewController: UIViewController, AVCaptureVideoDataOutputSampleBuf
         identifyThreshold = defaults.float(forKey: "identify_threshold")
 
         startCamera()
+        
+        self.enrollBtnView.clipsToBounds = true
+        self.enrollBtnView.layer.cornerRadius = 25
     }
     
     @IBAction func done_clicked(_ sender: Any) {
@@ -105,7 +107,7 @@ class CaptureViewController: UIViewController, AVCaptureVideoDataOutputSampleBuf
     
     @IBAction func enroll_clicked(_ sender: Any) {
         UIView.animate(withDuration: 0.5) {
-            self.enrollBtnView.backgroundColor = UIColor(named: "clr_main_button_bg1") // Change to desired color
+            self.enrollBtnView.backgroundColor = UIColor(named: "AccentColor") // Change to desired color
         }
         
         let templates = FaceSDK.templateExtraction(capturedImage!, faceBox: capturedFace!)

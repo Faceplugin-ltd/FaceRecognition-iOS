@@ -76,6 +76,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         SettingsViewController.setDefaultSettings()
         
+        personView.isHidden = true
         personView.delegate = self
         personView.dataSource = self
         personView.separatorStyle = .none
@@ -97,7 +98,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func enroll_clicked(_ sender: Any) {
         UIView.animate(withDuration: 0.5) {
-            self.enrollBtnView.backgroundColor = UIColor(named: "clr_main_button_bg1") // Change to desired color
+            self.enrollBtnView.backgroundColor = UIColor(named: "AccentColor") // Change to desired color
         }
 
         let imagePicker = UIImagePickerController()
@@ -122,7 +123,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func identify_clicked(_ sender: Any) {
         UIView.animate(withDuration: 0.5) {
-            self.identifyBtnView.backgroundColor = UIColor(named: "clr_main_button_bg1") // Change to desired color
+            self.identifyBtnView.backgroundColor = UIColor(named: "AccentColor") // Change to desired color
         }
         
         performSegue(withIdentifier: "camera", sender: self)
@@ -143,7 +144,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func capture_clicked(_ sender: Any) {
         UIView.animate(withDuration: 0.5) {
-            self.captureBtnView.backgroundColor = UIColor(named: "clr_main_button_bg1")
+            self.captureBtnView.backgroundColor = UIColor(named: "AccentColor")
         }
 
         performSegue(withIdentifier: "capture", sender: self)
@@ -164,7 +165,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBAction func attribute_clicked(_ sender: Any) {
         UIView.animate(withDuration: 0.5) {
-            self.attributeBtnView.backgroundColor = UIColor(named: "clr_main_button_bg1")
+            self.attributeBtnView.backgroundColor = UIColor(named: "AccentColor")
         }
         
         let imagePicker = UIImagePickerController()
@@ -190,7 +191,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func settings_clicked(_ sender: Any) {
         UIView.animate(withDuration: 0.5) {
-            self.settingsBtnView.backgroundColor = UIColor(named: "clr_main_button_bg1") // Change to desired color
+            self.settingsBtnView.backgroundColor = UIColor(named: "AccentColor") // Change to desired color
         }
 
         performSegue(withIdentifier: "settings", sender: self)
@@ -211,7 +212,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func about_clicked(_ sender: Any) {
         UIView.animate(withDuration: 0.5) {
-            self.aboutBtnView.backgroundColor = UIColor(named: "clr_main_button_bg1") // Change to desired color
+            self.aboutBtnView.backgroundColor = UIColor(named: "AccentColor") // Change to desired color
         }
 
         performSegue(withIdentifier: "about", sender: self)
@@ -320,6 +321,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let context = self.persistentContainer.viewContext
         let count = try! context.count(for: NSFetchRequest(entityName: ViewController.ENTITIES_NAME))
         
+        if count > 0 {
+            self.personView.isHidden = false
+        }
+        
         return count
     }
 
@@ -378,6 +383,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
         self.personView.reloadData()
+        
+        let count = try! context.count(for: NSFetchRequest(entityName: ViewController.ENTITIES_NAME))
+        if count == 0 {
+            self.personView.isHidden = true
+        }
     }
 }
 
