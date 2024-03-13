@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72558EB72B9CABED004579DC /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EB62B9CABED004579DC /* ContactUsVC.swift */; };
+		72558EC12B9CAC02004579DC /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EB92B9CAC02004579DC /* BottomPopupUtils.swift */; };
+		72558EC22B9CAC02004579DC /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBA2B9CAC02004579DC /* BottomPopupViewController.swift */; };
+		72558EC32B9CAC02004579DC /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBB2B9CAC02004579DC /* BottomPopupDismissInteractionController.swift */; };
+		72558EC42B9CAC02004579DC /* BottomPopupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBC2B9CAC02004579DC /* BottomPopupNavigationController.swift */; };
+		72558EC52B9CAC02004579DC /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBD2B9CAC02004579DC /* BottomPopupDismissAnimator.swift */; };
+		72558EC62B9CAC02004579DC /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBE2B9CAC02004579DC /* BottomPopupPresentAnimator.swift */; };
+		72558EC72B9CAC02004579DC /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBF2B9CAC02004579DC /* BottomPopupTransitionHandler.swift */; };
+		72558EC82B9CAC02004579DC /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EC02B9CAC02004579DC /* BottomPopupPresentationController.swift */; };
 		CE08D25A29ED8D4F0071F025 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08D25929ED8D4F0071F025 /* ToastView.swift */; };
 		CE1C76A72A0960F900CB9CE3 /* AttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C76A62A0960F900CB9CE3 /* AttributeViewController.swift */; };
 		CE29C50529ECD0A5008EDB5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29C50429ECD0A5008EDB5A /* AppDelegate.swift */; };
@@ -63,6 +72,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		72558EB62B9CABED004579DC /* ContactUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		72558EB92B9CAC02004579DC /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		72558EBA2B9CAC02004579DC /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		72558EBB2B9CAC02004579DC /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		72558EBC2B9CAC02004579DC /* BottomPopupNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupNavigationController.swift; sourceTree = "<group>"; };
+		72558EBD2B9CAC02004579DC /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		72558EBE2B9CAC02004579DC /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		72558EBF2B9CAC02004579DC /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		72558EC02B9CAC02004579DC /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
 		CE08D25929ED8D4F0071F025 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		CE1C76A62A0960F900CB9CE3 /* AttributeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeViewController.swift; sourceTree = "<group>"; };
 		CE29C50129ECD0A5008EDB5A /* FaceRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +134,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72558EB82B9CAC02004579DC /* BottomPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				72558EB92B9CAC02004579DC /* BottomPopupUtils.swift */,
+				72558EBA2B9CAC02004579DC /* BottomPopupViewController.swift */,
+				72558EBB2B9CAC02004579DC /* BottomPopupDismissInteractionController.swift */,
+				72558EBC2B9CAC02004579DC /* BottomPopupNavigationController.swift */,
+				72558EBD2B9CAC02004579DC /* BottomPopupDismissAnimator.swift */,
+				72558EBE2B9CAC02004579DC /* BottomPopupPresentAnimator.swift */,
+				72558EBF2B9CAC02004579DC /* BottomPopupTransitionHandler.swift */,
+				72558EC02B9CAC02004579DC /* BottomPopupPresentationController.swift */,
+			);
+			path = BottomPopupController;
+			sourceTree = "<group>";
+		};
 		CE29C4F829ECD0A4008EDB5A = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +173,7 @@
 		CE29C50329ECD0A5008EDB5A /* FaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				72558EB82B9CAC02004579DC /* BottomPopupController */,
 				CE29C50429ECD0A5008EDB5A /* AppDelegate.swift */,
 				CE08D25929ED8D4F0071F025 /* ToastView.swift */,
 				CE29C50629ECD0A5008EDB5A /* SceneDelegate.swift */,
@@ -147,12 +181,13 @@
 				CE29C50829ECD0A5008EDB5A /* ViewController.swift */,
 				CE29C54929ED7527008EDB5A /* PersonViewCell.swift */,
 				CE29C54629ED6A0C008EDB5A /* Model.xcdatamodeld */,
-				CE29C53C29ECE157008EDB5A /* AboutViewController.swift */,
 				CE1C76A62A0960F900CB9CE3 /* AttributeViewController.swift */,
 				CE29C53E29ECE159008EDB5A /* CameraViewController.swift */,
 				CE29C54029ECE15B008EDB5A /* FaceView.swift */,
 				CE29C53D29ECE158008EDB5A /* SettingsViewController.swift */,
 				CE29C53F29ECE15A008EDB5A /* UIImageExtension.swift */,
+				CE29C53C29ECE157008EDB5A /* AboutViewController.swift */,
+				72558EB62B9CABED004579DC /* ContactUsVC.swift */,
 				CE29C50A29ECD0A5008EDB5A /* Main.storyboard */,
 				CE29C51029ECD0FB008EDB5A /* Assets.xcassets */,
 				CE29C51229ECD0FB008EDB5A /* LaunchScreen.storyboard */,
@@ -323,16 +358,25 @@
 				CE1C76A72A0960F900CB9CE3 /* AttributeViewController.swift in Sources */,
 				CE29C50929ECD0A5008EDB5A /* ViewController.swift in Sources */,
 				CE29C50529ECD0A5008EDB5A /* AppDelegate.swift in Sources */,
+				72558EC62B9CAC02004579DC /* BottomPopupPresentAnimator.swift in Sources */,
+				72558EC72B9CAC02004579DC /* BottomPopupTransitionHandler.swift in Sources */,
 				CE29C54429ECE15C008EDB5A /* UIImageExtension.swift in Sources */,
 				CE08D25A29ED8D4F0071F025 /* ToastView.swift in Sources */,
+				72558EC52B9CAC02004579DC /* BottomPopupDismissAnimator.swift in Sources */,
 				CE29C54129ECE15C008EDB5A /* AboutViewController.swift in Sources */,
 				CE29C54329ECE15C008EDB5A /* CameraViewController.swift in Sources */,
+				72558EC42B9CAC02004579DC /* BottomPopupNavigationController.swift in Sources */,
 				CE29C50729ECD0A5008EDB5A /* SceneDelegate.swift in Sources */,
+				72558EC22B9CAC02004579DC /* BottomPopupViewController.swift in Sources */,
+				72558EC82B9CAC02004579DC /* BottomPopupPresentationController.swift in Sources */,
 				CEF44D702A05404A002AD362 /* CaptureViewController.swift in Sources */,
 				CE29C54829ED6A0C008EDB5A /* Model.xcdatamodeld in Sources */,
+				72558EC12B9CAC02004579DC /* BottomPopupUtils.swift in Sources */,
+				72558EC32B9CAC02004579DC /* BottomPopupDismissInteractionController.swift in Sources */,
 				CE29C54229ECE15C008EDB5A /* SettingsViewController.swift in Sources */,
 				CE29C54A29ED7527008EDB5A /* PersonViewCell.swift in Sources */,
 				CE29C54529ECE15C008EDB5A /* FaceView.swift in Sources */,
+				72558EB72B9CABED004579DC /* ContactUsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,8 +551,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = SZU3WP325N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,7 +565,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The application utilizes the camera for performing facial recognition.\n\n\n\n\nThe app utilizes the camera for performing facial recognition.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -533,7 +578,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.faceplugin.facerecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = FaceLiveTest;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -549,8 +594,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = SZU3WP325N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,7 +608,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The application utilizes the camera for performing facial recognition.\n\n\n\n\nThe app utilizes the camera for performing facial recognition.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -575,7 +621,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.faceplugin.facerecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = FaceLiveTest;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

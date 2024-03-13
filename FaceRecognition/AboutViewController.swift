@@ -3,8 +3,28 @@ import AVFoundation
 
 class AboutViewController: UIViewController{
        
+    @IBOutlet weak var ContactUsBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.ContactUsBtn.clipsToBounds = true
+        self.ContactUsBtn.layer.cornerRadius = 25
+    }
+    
+    /*@IBAction func testBtn_clicked(_ sender: UIButton) {
+        if sender.isSelected{
+            sender.isSelected = false
+            print("Front")
+        } else {
+            sender.isSelected = true
+            print("Back")
+        }
+    }*/
+    
+    @IBAction func contactUs_clicked(_ sender: Any) {
+        guard let popupNavController = storyboard?.instantiateViewController(withIdentifier: "ContactUsVC") as? ContactUsVC else { return }
+        present(popupNavController, animated: true, completion: nil)
     }
     
     @IBAction func done_clicked(_ sender: Any) {
@@ -12,57 +32,33 @@ class AboutViewController: UIViewController{
             self.dismiss(animated: true, completion: nil)
         }
     }
-    
-    
-    @IBAction func mail_clicked(_ sender: Any) {
-        let appURL = URL(string: "mailto:info@faceplugin.com") // URL scheme for Mail app
-        
-        if let appURL = appURL, UIApplication.shared.canOpenURL(appURL) {
-            // If Mail app is installed, open it with a pre-filled email
-            UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
-        } else {
-            // If Mail app is not installed, show an alert indicating that Mail app is not available
-            let alert = UIAlertController(title: "Mail App Not Available", message: "The Mail app is not installed on this device.", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(okAction)
-            UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
-        }
-    }
-    
-    
-    @IBAction func skype_clicked(_ sender: Any) {
+}
 
+extension AboutViewController: BottomPopupDelegate {
+    
+    func bottomPopupViewLoaded() {
+        print("bottomPopupViewLoaded")
     }
     
-    @IBAction func telegram_clicked(_ sender: Any) {
-        /*let appURL = URL(string: "tg://resolve?domain=faceplugin") // URL scheme for Telegram app
-            
-            if let appURL = appURL, UIApplication.shared.canOpenURL(appURL) {
-                // If Telegram app is installed, open it to the "Add Contact" screen
-                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
-            } else {
-                let username = "faceplugin"
-                let telegramURL = URL(string: "https://t.me/\(username)")!
-                UIApplication.shared.open(telegramURL, options: [:], completionHandler: nil)
-            }*/
+    func bottomPopupWillAppear() {
+        print("bottomPopupWillAppear")
     }
     
-    @IBAction func whatsapp_clicked(_ sender: Any) {
-       /* let appURL = URL(string: "whatsapp://send?phone=+14422295661") // URL scheme for Telegram app
-            
-            if let appURL = appURL, UIApplication.shared.canOpenURL(appURL) {
-                // If Telegram app is installed, open it to the "Add Contact" screen
-                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
-            } else {
-                let username = "+14422295661"
-                let telegramURL = URL(string: "https://wa.me/\(username)")!
-                UIApplication.shared.open(telegramURL, options: [:], completionHandler: nil)
-            }*/
+    func bottomPopupDidAppear() {
+        print("bottomPopupDidAppear")
     }
     
-    @IBAction func github_clicked(_ sender: Any) {
-        let telegramURL = URL(string: "https://github.com/Faceplugin-ltd")!
-        UIApplication.shared.open(telegramURL, options: [:], completionHandler: nil)
+    func bottomPopupWillDismiss() {
+        print("bottomPopupWillDismiss")
+    }
+    
+    func bottomPopupDidDismiss() {
+        print("bottomPopupDidDismiss")
+    }
+    
+    func bottomPopupDismissInteractionPercentChanged(from oldValue: CGFloat, to newValue: CGFloat) {
+        print("bottomPopupDismissInteractionPercentChanged fromValue: \(oldValue) to: \(newValue)")
     }
 }
+
 

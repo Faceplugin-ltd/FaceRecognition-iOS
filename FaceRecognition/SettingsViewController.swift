@@ -100,6 +100,11 @@ class SettingsViewController: UIViewController{
         if let vc = self.presentingViewController as? ViewController {
             self.dismiss(animated: true, completion: {
                 vc.personView.reloadData()
+                let context = self.persistentContainer.viewContext
+                let count = try! context.count(for: NSFetchRequest(entityName: ViewController.ENTITIES_NAME))
+                if count == 0 {
+                    vc.personView.isHidden = true
+                }
             })
         }
     }
@@ -317,6 +322,7 @@ class SettingsViewController: UIViewController{
         
         SettingsViewController.setDefaultSettings()
         showToast(message: "The default settings has been restored.")
+        self.viewDidLoad()
     }
     
     
