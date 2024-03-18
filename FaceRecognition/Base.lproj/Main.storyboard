@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ER4-IA-00Q" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="-120"/>
+            <point key="canvasLocation" x="387.02290076335879" y="-120.42253521126761"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="TSq-ca-M0h">
@@ -1638,63 +1638,11 @@
                                     <constraint firstAttribute="height" constant="250" id="c1H-LJ-z7P"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqu-wt-W6o">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqu-wt-W6o">
                                 <rect key="frame" x="16" y="797" width="361" height="1"/>
-                                <subviews>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtD-EB-vTV" userLabel="ViewIn">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="82.333333333333329"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_faceplugin" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-KY-m92">
-                                                <rect key="frame" x="10" y="16" width="24" height="24"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="24" id="HXi-ln-Odv"/>
-                                                    <constraint firstAttribute="height" constant="24" id="pId-gH-W1t"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FacePlugin Ltd offers SDKs for face recognition, liveness detection, and id document recognition." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixc-RR-CDl">
-                                                <rect key="frame" x="42" y="16.000000000000004" width="309" height="50.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" red="0.90196078430000004" green="0.88235294119999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGv-RF-owT">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="82.333333333333329"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title=" "/>
-                                                <connections>
-                                                    <action selector="brand_clicked:" destination="j6C-3q-yZ3" eventType="touchUpInside" id="6yn-pU-o7q"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Abj-KY-m92" firstAttribute="leading" secondItem="wtD-EB-vTV" secondAttribute="leading" constant="10" id="0iM-xs-NvA"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ixc-RR-CDl" secondAttribute="bottom" constant="16" id="4Gy-mv-0gW"/>
-                                            <constraint firstAttribute="trailing" secondItem="qGv-RF-owT" secondAttribute="trailing" id="6VH-Bs-fHU"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="6jz-Pm-ojc"/>
-                                            <constraint firstItem="Ixc-RR-CDl" firstAttribute="top" secondItem="wtD-EB-vTV" secondAttribute="top" constant="16" id="BoC-nW-PQP"/>
-                                            <constraint firstItem="qGv-RF-owT" firstAttribute="leading" secondItem="wtD-EB-vTV" secondAttribute="leading" id="JeZ-fa-Jnx"/>
-                                            <constraint firstItem="Abj-KY-m92" firstAttribute="top" secondItem="wtD-EB-vTV" secondAttribute="top" constant="16" id="KNS-9m-XRO"/>
-                                            <constraint firstItem="qGv-RF-owT" firstAttribute="top" secondItem="wtD-EB-vTV" secondAttribute="top" id="MeK-UV-BTg"/>
-                                            <constraint firstAttribute="bottom" secondItem="qGv-RF-owT" secondAttribute="bottom" id="SFg-M5-o4T"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ixc-RR-CDl" secondAttribute="trailing" constant="10" id="UgC-Sw-k65"/>
-                                            <constraint firstItem="Ixc-RR-CDl" firstAttribute="leading" secondItem="Abj-KY-m92" secondAttribute="trailing" constant="8" id="zJi-EV-cim"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="wtD-EB-vTV" secondAttribute="bottom" id="0pY-OG-O9e"/>
-                                    <constraint firstAttribute="trailing" secondItem="wtD-EB-vTV" secondAttribute="trailing" id="7ke-HM-V2k"/>
                                     <constraint firstAttribute="height" constant="1" id="BxC-qj-DQX"/>
-                                    <constraint firstItem="wtD-EB-vTV" firstAttribute="leading" secondItem="yqu-wt-W6o" secondAttribute="leading" id="GQC-3b-B3p"/>
-                                    <constraint firstItem="wtD-EB-vTV" firstAttribute="top" secondItem="yqu-wt-W6o" secondAttribute="top" id="YLz-44-St8"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="l1O-am-f3w">

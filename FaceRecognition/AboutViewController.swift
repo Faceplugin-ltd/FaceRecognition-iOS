@@ -12,16 +12,6 @@ class AboutViewController: UIViewController{
         self.ContactUsBtn.layer.cornerRadius = 25
     }
     
-    /*@IBAction func testBtn_clicked(_ sender: UIButton) {
-        if sender.isSelected{
-            sender.isSelected = false
-            print("Front")
-        } else {
-            sender.isSelected = true
-            print("Back")
-        }
-    }*/
-    
     @IBAction func contactUs_clicked(_ sender: Any) {
         guard let popupNavController = storyboard?.instantiateViewController(withIdentifier: "ContactUsVC") as? ContactUsVC else { return }
         present(popupNavController, animated: true, completion: nil)
