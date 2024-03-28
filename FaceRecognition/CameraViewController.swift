@@ -8,16 +8,22 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     @IBOutlet weak var faceView: FaceView!
     @IBOutlet weak var resultView: UIView!
     
+    var identifiedStr: String?
+    var similarityStr: String?
+    var livenessStr: String?
+    var yawStr: String?
+    var rollStr: String?
+    var pitchStr: String?
+    
     let session = AVCaptureSession()
     
     @IBOutlet weak var enrolledImage: UIImageView!
     @IBOutlet weak var identifiedImage: UIImageView!
     @IBOutlet weak var identifiedLbl: UILabel!
-    @IBOutlet weak var similarityLbl: UILabel!
-    @IBOutlet weak var livenessLbl: UILabel!
-    @IBOutlet weak var yawLbl: UILabel!
-    @IBOutlet weak var rollLbl: UILabel!
-    @IBOutlet weak var pitchLbl: UILabel!
+    
+    @IBOutlet weak var enrolledView: UIView!
+    @IBOutlet weak var identifiedView: UIView!
+    @IBOutlet weak var detailsBtn: UIButton!
     
     var recognized = false
 
@@ -47,6 +53,13 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
 
         resultView.translatesAutoresizingMaskIntoConstraints = true
         resultView.frame = view.bounds
+        
+        detailsBtn.layer.cornerRadius = 25
+        detailsBtn.clipsToBounds = true
+        enrolledView.layer.cornerRadius = 8
+        enrolledView.clipsToBounds = true
+        identifiedView.layer.cornerRadius = 8
+        identifiedView.clipsToBounds = true
 
         let defaults = UserDefaults.standard
         cameraLens_val = defaults.integer(forKey: "camera_lens")
@@ -54,6 +67,17 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         identifyThreshold = defaults.float(forKey: "identify_threshold")
 
         startCamera()
+    }
+    
+    @IBAction func detailsBtnclicked(_ sender: Any) {
+        guard let popupNavController = storyboard?.instantiateViewController(withIdentifier: "IdentifyDetailsVC") as? IdentifyDetailsVC else { return }
+        popupNavController.identifiedStr = self.identifiedStr
+        popupNavController.similarityStr = self.similarityStr
+        popupNavController.livenessStr = self.livenessStr
+        popupNavController.yawStr = self.yawStr
+        popupNavController.rollStr = self.rollStr
+        popupNavController.pitchStr = self.pitchStr
+        present(popupNavController, animated: true, completion: nil)
     }
     
     func startCamera() {
@@ -167,12 +191,15 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                     DispatchQueue.main.sync {
                         self.enrolledImage.image = enrolledFaceImage
                         self.identifiedImage.image = identifiedFaceImage
-                        self.identifiedLbl.text = "Identified: " + maxSimilarityName
-                        self.similarityLbl.text = "Similarity: " + String(format: "%.03f", maxSimilarity)
-                        self.livenessLbl.text = "Liveness score: " + String(format: "%.03f", faceBox.liveness)
-                        self.yawLbl.text = "Yaw: " + String(format: "%.03f", faceBox.yaw)
-                        self.rollLbl.text = "Roll: " + String(format: "%.03f", faceBox.yaw)
-                        self.pitchLbl.text = "Pitch: " + String(format: "%.03f", faceBox.yaw)
+                        self.identifiedLbl.text = "ID: " + maxSimilarityName
+                        
+                        self.identifiedStr = "Identified: " + maxSimilarityName
+                        self.similarityStr = "Similarity: " + String(format: "%.03f", maxSimilarity)
+                        self.livenessStr = "Liveness score: " + String(format: "%.03f", faceBox.liveness)
+                        self.yawStr = "Yaw: " + String(format: "%.03f", faceBox.yaw)
+                        self.rollStr = "Roll: " + String(format: "%.03f", faceBox.yaw)
+                        self.pitchStr = "Pitch: " + String(format: "%.03f", faceBox.yaw)
+                        
                         self.resultView.showView(isHidden_: true)
                         
                         self.session.stopRunning()
@@ -208,5 +235,32 @@ extension UIView {
                 self.isHidden = true
             })
         }
+    }
+}
+
+extension CameraViewController: BottomPopupDelegate {
+    
+    func bottomPopupViewLoaded() {
+        print("bottomPopupViewLoaded")
+    }
+    
+    func bottomPopupWillAppear() {
+        print("bottomPopupWillAppear")
+    }
+    
+    func bottomPopupDidAppear() {
+        print("bottomPopupDidAppear")
+    }
+    
+    func bottomPopupWillDismiss() {
+        print("bottomPopupWillDismiss")
+    }
+    
+    func bottomPopupDidDismiss() {
+        print("bottomPopupDidDismiss")
+    }
+    
+    func bottomPopupDismissInteractionPercentChanged(from oldValue: CGFloat, to newValue: CGFloat) {
+        print("bottomPopupDismissInteractionPercentChanged fromValue: \(oldValue) to: \(newValue)")
     }
 }

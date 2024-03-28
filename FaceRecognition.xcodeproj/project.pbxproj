@@ -16,6 +16,7 @@
 		72558EC62B9CAC02004579DC /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBE2B9CAC02004579DC /* BottomPopupPresentAnimator.swift */; };
 		72558EC72B9CAC02004579DC /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EBF2B9CAC02004579DC /* BottomPopupTransitionHandler.swift */; };
 		72558EC82B9CAC02004579DC /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72558EC02B9CAC02004579DC /* BottomPopupPresentationController.swift */; };
+		936636EF2BAFF0A30058D8FE /* IdentifyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936636EE2BAFF0A30058D8FE /* IdentifyDetailsVC.swift */; };
 		CE08D25A29ED8D4F0071F025 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08D25929ED8D4F0071F025 /* ToastView.swift */; };
 		CE1C76A72A0960F900CB9CE3 /* AttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C76A62A0960F900CB9CE3 /* AttributeViewController.swift */; };
 		CE29C50529ECD0A5008EDB5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29C50429ECD0A5008EDB5A /* AppDelegate.swift */; };
@@ -81,6 +82,7 @@
 		72558EBE2B9CAC02004579DC /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
 		72558EBF2B9CAC02004579DC /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
 		72558EC02B9CAC02004579DC /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		936636EE2BAFF0A30058D8FE /* IdentifyDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifyDetailsVC.swift; sourceTree = "<group>"; };
 		CE08D25929ED8D4F0071F025 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		CE1C76A62A0960F900CB9CE3 /* AttributeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeViewController.swift; sourceTree = "<group>"; };
 		CE29C50129ECD0A5008EDB5A /* FaceRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				CE29C54629ED6A0C008EDB5A /* Model.xcdatamodeld */,
 				CE1C76A62A0960F900CB9CE3 /* AttributeViewController.swift */,
 				CE29C53E29ECE159008EDB5A /* CameraViewController.swift */,
+				936636EE2BAFF0A30058D8FE /* IdentifyDetailsVC.swift */,
 				CE29C54029ECE15B008EDB5A /* FaceView.swift */,
 				CE29C53D29ECE158008EDB5A /* SettingsViewController.swift */,
 				CE29C53F29ECE15A008EDB5A /* UIImageExtension.swift */,
@@ -375,6 +378,7 @@
 				72558EC32B9CAC02004579DC /* BottomPopupDismissInteractionController.swift in Sources */,
 				CE29C54229ECE15C008EDB5A /* SettingsViewController.swift in Sources */,
 				CE29C54A29ED7527008EDB5A /* PersonViewCell.swift in Sources */,
+				936636EF2BAFF0A30058D8FE /* IdentifyDetailsVC.swift in Sources */,
 				CE29C54529ECE15C008EDB5A /* FaceView.swift in Sources */,
 				72558EB72B9CABED004579DC /* ContactUsVC.swift in Sources */,
 			);
