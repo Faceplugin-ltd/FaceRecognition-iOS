@@ -2,8 +2,9 @@
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-Javascript/assets/160750757/657130a9-50f2-486d-b6d5-b78bcec5e6e2.png" width=200/>
 </div>
 
-# Face Recognition Liveness Detection (Anti Spoofing) SDK For iOS
-Experience the epitome of speed and fairness with our **unbiased** face recognition model, coupled with an advanced **liveness detection** system that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security.
+# On-Premise Face Recognition Face Liveness Detection (Face Anti Spoofing) SDK For iOS
+Experience the epitome of speed and fairness with our  face recognition model **Top-ranked on NIST FRVT**, coupled with an advanced **iBeta level 2 liveness detection** engine that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security. <br>This is **on-premise** SDK which means everything is processed on your phone and **NO** data leaves the device 
+<br></br>
 
 <div align="left">
 <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
