@@ -3,7 +3,9 @@
 </div>
 
 # Face Recognition SDK iOS with 3D passive liveness Detection - Fully On Premise
-Experience the epitome of speed and fairness with our  face recognition model **Top-ranked on NIST FRVT**, coupled with an advanced **iBeta level 2 liveness detection** engine that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security. <br>This is **on-premise** SDK which means everything is processed on your phone and **NO** data leaves the device 
+## Overview
+Try our `face recognition SDK` Top-ranked on NIST FRVT with an advanced `iBeta level 2 liveness detection` engine that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security.
+<br>This is `on-premise face recognition SDK` which means everything is processed on your phone and **NO** data leaves the device 
 <br></br>
 
 <div align="left">
@@ -13,7 +15,7 @@ Experience the epitome of speed and fairness with our  face recognition model **
 <img src="https://img.shields.io/github/issues-pr/genderev/assassin" alt="pr"/>
 </div>
 
-<h2>Screenshots</h2>
+## Screenshots
 <div align="left">
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS/assets/160750757/51a03965-68bd-4d26-b8a3-f4b6e1320dcf" width=200/>
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS/assets/160750757/acf105ba-fc10-482f-9251-a86269ef1555" width=200/>
@@ -21,15 +23,12 @@ Experience the epitome of speed and fairness with our  face recognition model **
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS/assets/160750757/ddc08b8f-c66c-4aff-8ad8-1e5aed0e6018" width=200/>
 </div>
 
-<h2>Install License</h2>
+## Install License
   
-The code below shows how to use the license: https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS/blob/598056aaceb49d72a5ac5e42261e1c871f05b88f/FaceRecognition/ViewController.swift#L48-L52
-
+The code below shows how to use the license: https://github.com/Faceplugin-ltd/FaceRecognition-iOS/blob/598056aaceb49d72a5ac5e42261e1c871f05b88f/FaceRecognition/ViewController.swift#L48-L52
 If you want to get license and update models, please contact us
 
-
-<h2>List of our Products</h2>
-
+## List of our Products
 * **[FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-Android)**
 * **[FaceRecognition-LivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceRecognition-iOS)**
 * **[FaceRecognition-LivenessDetection-Javascript](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Javascript)**
@@ -42,7 +41,7 @@ If you want to get license and update models, please contact us
 * **[Liveness Detection SDK](https://github.com/Faceplugin-ltd/Face-Liveness-Detection-SDK)**
 * **[ID Card Recognition](https://github.com/Faceplugin-ltd/ID-Card-Recognition)**
 
-<h2>Contact</h2>
+## Contact
 <div align="left">
 <a target="_blank" href="mailto:info@faceplugin.com"><img src="https://img.shields.io/badge/email-info@faceplugin.com-blue.svg?logo=gmail " alt="faceplugin.com"></a>&emsp;
 <a target="_blank" href="https://t.me/faceplugin"><img src="https://img.shields.io/badge/telegram-@faceplugin-blue.svg?logo=telegram " alt="faceplugin.com"></a>&emsp;
