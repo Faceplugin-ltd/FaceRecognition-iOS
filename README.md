@@ -8,7 +8,7 @@
 
 # Face Recognition SDK iOS with 3D Passive Liveness Detection - Fully On Premise
 ## Overview
-Try our `face recognition SDK` Top-ranked on NIST FRVT with`iBeta level 2 compliant liveness detection` engine that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security.
+Try `face recognition SDK` from [Faceplugin](https://faceplugin.com/), Top-ranked on NIST FRVT with`iBeta level 2 compliant liveness detection` engine that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security.
 <br>This is `on-premise face recognition SDK` which means everything is processed in your phone and **NO** data leaves the device 
 <br></br>
 
