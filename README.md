@@ -27,10 +27,9 @@ Try `face recognition SDK` from [Faceplugin](https://faceplugin.com/), Top-ranke
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS/assets/160750757/ddc08b8f-c66c-4aff-8ad8-1e5aed0e6018" width=200/>
 </div>
 
-## Install License
-  
+## Install License  
 The code below shows how to use the license: https://github.com/Faceplugin-ltd/FaceRecognition-iOS/blob/598056aaceb49d72a5ac5e42261e1c871f05b88f/FaceRecognition/ViewController.swift#L48-L52
-If you want to get license and update models, please contact us
+Please [contact us](#contact) to get the license.
 
 ## List of our Products
 * **[FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-Android)**
