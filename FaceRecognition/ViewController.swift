@@ -45,11 +45,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Do any additional setup after loading the view.
     
         //com.faceplugin.facerecognition
-        var ret = FaceSDK.setActivation("LeWOcH9rsL5bnyK6we0JXp2DWDdWt4i7scE539/s2nvxGXyNVx29ijz7fI1Ki1JW/Mo5HxX3XVwB" +
-                                        "a3lXJ+hIIMEFCLc8Fl53dAh0ihM5/jY3w/thcRFbTzxzDoqRe5kvTfvsyyb/S0y/ycVZc0sLcdXt" +
-                                        "HDcF1MICCcAXvHkNd75HnPIVJQyp+B1SA8GWg+Zkc0+rA4OSkohzMkust9n61lIql8Q1+5x+5mZE" +
-                                        "9qIcJasaDbF41kvR1FHm8AB0nWId1Yp/Kiyqy1U28rhUC3zIWHqGfc3uxJ1sWuHObOQwPZRqkynP" +
-                                        "sFaClPQoURlrl9eUI5LKTptAY+cNtQqIfLFUdA==")
+        var ret = FaceSDK.setActivation("dQXDywnDrBdlF8OYMHq8SYW9ovKjhvR/eB/s3fsfmaMNaqLSmpdiO8R1dXKWDLkOdPhFiO/G6VVD" +
+                                        "lHAwnA6cd5UYZLHsM/iF4QnO3/yNQCYm7b+lYdSjMOogQViuCf1pGwQnnyiRdt1sK7XqYaLOsNUB" +
+                                        "7ICiP/Uh3/hK84enuAqmt5kIr4htu+GdoaP+v0AMJvN3zG+CZerPc9EnFvnSfsaJ0pL95YxCHDPx" +
+                                        "3tkiZU6WK/SG49mzcON+qq4n3qeoK+XkBXnW9L324TQpeF1D6u/N5LYAVQ7elRNrryApKCdwC713" +
+                                        "OH+siSAy2wv6sFpMIXL8cLNsdQnew5H2bMwEjA==")
         
         
         
