@@ -561,7 +561,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = FaceRecognitionSDK/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FaceRecognitionSDK;
+				INFOPLIST_KEY_CFBundleDisplayName = "Faceplugin-Face-SDK";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,7 +756,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = FaceRecognitionSDK/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FaceRecognitionSDK;
+				INFOPLIST_KEY_CFBundleDisplayName = "Faceplugin-Face-SDK";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
