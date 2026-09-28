@@ -14,8 +14,8 @@ final class AboutViewController: UIViewController {
         logo.isUserInteractionEnabled = true
         logo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openSite)))
         logo.translatesAutoresizingMaskIntoConstraints = false
-        logo.heightAnchor.constraint(equalToConstant: 120).isActive = true
-        logo.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        logo.heightAnchor.constraint(equalToConstant: 52).isActive = true
+        logo.widthAnchor.constraint(equalToConstant: 260).isActive = true
 
         let company = UILabel()
         company.text = "FacePlugin"
